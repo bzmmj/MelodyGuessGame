@@ -1,0 +1,20 @@
+# Built files
+*.apk
+*.aab
+/build/
+/app/build/
+.gradle/
+gradle-wrapper.jar.bak
+
+# Local config
+local.properties
+
+# IDE
+*.iml
+.idea/
+.vscode/
+captures/
+
+# OS
+.DS_Store
+Thumbs.db

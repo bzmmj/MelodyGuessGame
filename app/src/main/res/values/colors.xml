@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_light">#FFE4EC</color>
+    <color name="pink_main">#FFB6C1</color>
+    <color name="pink_dark">#FF69B4</color>
+    <color name="cream">#FFF8E7</color>
+    <color name="gold_start">#FFE066</color>
+    <color name="gold_end">#DAA520</color>
+    <color name="gold_border">#B8860B</color>
+    <color name="text_dark">#5D4037</color>
+    <color name="text_light">#8D6E63</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_gradient_start">#FFF0F5</color>
+    <color name="bg_gradient_end">#FFE4E1</color>
+    <color name="button_text">#5D4037</color>
+    <color name="chat_bg">#FFFFFF</color>
+    <color name="chat_border">#FFB6C1</color>
+</resources>

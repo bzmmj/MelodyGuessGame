@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- 粉色背景圆 -->
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M100,100m-90,0a90,90 0,1 1,180 0a90,90 0,1 1,-180 0" />
+    <!-- 耳朵左 -->
+    <ellipse
+        android:fillColor="#FFB6C1"
+        android:cx="40"
+        android:cy="50"
+        android:rx="25"
+        android:ry="35" />
+    <ellipse
+        android:fillColor="#FFC0CB"
+        android:cx="42"
+        android:cy="52"
+        android:rx="15"
+        android:ry="22" />
+    <!-- 耳朵右 -->
+    <ellipse
+        android:fillColor="#FFB6C1"
+        android:cx="160"
+        android:cy="50"
+        android:rx="25"
+        android:ry="35" />
+    <ellipse
+        android:fillColor="#FFC0CB"
+        android:cx="158"
+        android:cy="52"
+        android:rx="15"
+        android:ry="22" />
+    <!-- 白色脸部 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,145 m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+    <!-- 眼睛 -->
+    <ellipse
+        android:fillColor="#5D4037"
+        android:cx="78"
+        android:cy="130"
+        android:rx="8"
+        android:ry="10" />
+    <ellipse
+        android:fillColor="#5D4037"
+        android:cx="122"
+        android:cy="130"
+        android:rx="8"
+        android:ry="10" />
+    <!-- 鼻子 -->
+    <circle
+        android:fillColor="#FFE066"
+        android:cx="100"
+        android:cy="145"
+        android:r="6" />
+    <!-- 嘴巴（微笑） -->
+    <path
+        android:strokeColor="#5D4037"
+        android:strokeWidth="2"
+        android:fill="none"
+        android:pathData="M92,155 Q100,163 108,155" />
+    <!-- 腮红 -->
+    <ellipse
+        android:fillColor="#FFB6C1"
+        android:fillAlpha="0.5"
+        android:cx="65"
+        android:cy="142"
+        android:rx="10"
+        android:ry="6" />
+    <ellipse
+        android:fillColor="#FFB6C1"
+        android:fillAlpha="0.5"
+        android:cx="135"
+        android:cy="142"
+        android:rx="10"
+        android:ry="6" />
+</vector>
