@@ -27,12 +27,17 @@ jobs:
           sdkmanager "platforms;android-34" "build-tools;34.0.0"
           yes | sdkmanager --licenses > /dev/null
 
-      # No Gradle wrapper in repo: build-action downloads Gradle 8.2 itself.
+      # Download Gradle directly (no wrapper needed)
+      - name: Download Gradle
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.2-bin.zip -O /tmp/gradle.zip
+          unzip -q /tmp/gradle.zip -d /opt
+          echo "GRADLE_HOME=/opt/gradle-8.2" >> $GITHUB_ENV
+          echo "/opt/gradle-8.2/bin" >> $GITHUB_PATH
+
       - name: Build Debug APK
-        uses: gradle/gradle-build-action@v3
-        with:
-          gradle-version: '8.2'
-          arguments: ':app:assembleDebug'
+        run: |
+          gradle :app:assembleDebug --no-daemon --stacktrace
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4

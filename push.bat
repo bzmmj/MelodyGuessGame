@@ -1,16 +1,16 @@
 @echo off
-REM 美乐蒂猜猜乐 - 一键推送到 GitHub（方案B 云端构建）
-cd /d "%~dp0"
+chcp 65001 >nul
+cd /d "D:\MelodyGuessGame"
+set "GIT=C:\Users\ZhuanZ\.workbuddy\vendor\PortableGit\mingw64\bin\git.exe"
 echo ============================================
-echo   美乐蒂猜猜乐 - 推送到 GitHub
+echo   MelodyGuessGame - Push to GitHub
 echo ============================================
-set /p REPO_URL=请粘贴你的 GitHub 仓库 HTTPS 地址（形如 https://github.com/用户名/仓库名.git）:
-git remote remove origin 2>nul
-git remote add origin %REPO_URL%
-git push -u origin main
+echo.
+%GIT% remote remove origin 2>nul
+%GIT% remote add origin https://github.com/bzmmj/MelodyGuessGame.git
+%GIT% push -u origin main
 echo.
 echo ============================================
-echo   如果提示输入密码，请填写 GitHub Personal Access Token（不是账号密码）
-echo   没有 Token？去 GitHub -> Settings -> Developer settings -> Personal access tokens 创建一个（勾 repo 权限）
+echo   Done! Check https://github.com/bzmmj/MelodyGuessGame/actions
 echo ============================================
 pause
